@@ -525,6 +525,21 @@ h6 {
   font-size: 60px;
   line-height: 160px; 
 }
+/* Quote
+/ -------------------------------------------------- */
+.quote {
+  height: 10em;
+  background: url(../assets/images/banner-bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.quote p {
+  margin-top: 2em;
+  font-size: 28px;
+  font-weight: 400;
+}
 /* About
 / -------------------------------------------------- */
 .about h1,

@@ -30,7 +30,7 @@ exports.create = function(req, res) {
   var Mailgun = require('mailgun').Mailgun;
 
   var mg = new Mailgun('key-75a41c80f15ae3cc136441b2c284d45c');
-  mg.sendText(req.body.email, ['Chase Merlin <chase.merlin@spotwise.co>', '<info@spotwise.co>'],
+  mg.sendText(req.body.email, ['Chase Merlin <chase.merlin@spotwise.co>', ''],
     'Contact Form Inquiry',
     req.body.message,
     'noreply@example.com', {},
