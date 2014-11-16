@@ -626,6 +626,26 @@ h6 {
 .services i {
   color: rgba( 206, 65, 65, 1.00);
 }
+/* contact
+/ -------------------------------------------------- */
+.contact label {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 100;
+}
+.contact #form {
+  background: #00c0f3;
+  border-radius: 6px;
+  border: solid 1px transparent;
+  padding: 14px;
+}
+.contact .details {
+  list-style: none;
+}
+.contact .details p {
+  font-size: 22px;
+  font-weight: 100;
+}
 /* Footer
 / -------------------------------------------------- */
 .footer {
