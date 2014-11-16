@@ -278,6 +278,20 @@ h6 {
   border: solid 3px #00c0f3;
   border-radius: 4px;
 }
+#button-white {
+  display: inline-block;
+  height: auto !important;
+  margin: 0.5em;
+  padding: 6px 10px;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.075em;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border: solid 3px #fff;
+  border-radius: 4px;
+}
 /*----- Button changes color & animates -----*/
 .btn-text-transparent {
   color: #fff;
@@ -288,6 +302,16 @@ h6 {
 }
 .btn-text-transparent:hover {
   color: #00c0f3;
+}
+.btn-text-white {
+  color: #00c0f3;
+  -webkit-transition: color .2s ease-in-out;
+  -moz-transition: color .2s  ease-in-out;
+  -o-transition: color .2s  ease-in-out;
+  transition: color .2s  ease-in-out;
+}
+.btn-text-white:hover {
+  color: #fff;
 }
 /* Blue button */
 .btn-blue-animate {
@@ -303,6 +327,20 @@ h6 {
 }
 .btn-blue-animate:hover {
   background: transparent;
+}
+.btn-white-animate {
+  -webkit-transition: color .2s ease-in-out;
+  -moz-transition: color .2s  ease-in-out;
+  -o-transition: color .2s  ease-in-out;
+  transition: color .2s  ease-in-out;
+  background: #fff;
+  -webkit-transition: background .2s ease-in-out;
+  -moz-transition: background .2s  ease-in-out;
+  -o-transition: background .2s  ease-in-out;
+  transition: background .2s  ease-in-out;
+}
+.btn-white-animate:hover {
+  background: #00c0f3;
 }
 /* ==================================================
    /Margin Sets & Colors
@@ -643,23 +681,65 @@ h6 {
 }
 /* contact
 / -------------------------------------------------- */
-.contact label {
-  color: #fff;
-  font-size: 22px;
-  font-weight: 100;
+.contact-details {
+  margin-top: 20px;
 }
-.contact #form {
-  background: #00c0f3;
-  border-radius: 6px;
-  border: solid 1px transparent;
-  padding: 14px;
+.contact-details h2 {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  line-height: 1em;
+  text-transform: uppercase;
 }
-.contact .details {
-  list-style: none;
+.contact-details ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; 
 }
-.contact .details p {
-  font-size: 22px;
-  font-weight: 100;
+.contact-details ul li {
+  margin: 0 0 20px;
+  line-height: 28px;
+  padding: 0; 
+}
+#contact-form form {
+  margin-top: 40px;
+}
+#contact-form {
+  margin-bottom: 0;
+  background: #00c0f3; 
+}
+#contact-form p {
+  margin-bottom: 1px; 
+}
+#contact-form input,
+#contact-form textarea {
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background-color: #FFFFFF;
+  color: #55606A;
+  font-size: 16px;
+  height: auto;
+  padding: 15px;
+  margin: 0;
+  resize: none;
+}
+#contact-form input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#contact-form textarea {
+  width: 100%;
+  resize: vertical;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 /* Footer
 / -------------------------------------------------- */
