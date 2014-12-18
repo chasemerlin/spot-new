@@ -578,6 +578,93 @@ h6 {
   font-size: 28px;
   font-weight: 400;
 }
+/* Media
+/ -------------------------------------------------- */
+.work-nav {
+  margin-bottom: 30px;
+}
+.type-work {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.work-nav #filters {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+.work-nav #filters li {
+  display: inline-block;
+  padding: 0;
+  margin-right: 30px;
+}
+.work-nav #filters li a {
+  color: #7F8289;
+  font-size: 13px;
+  text-transform: uppercase;  
+  display: block; 
+}
+.work-nav #filters li a:hover {
+  color: #DE5E60;
+}
+.work-nav #filters li a.selected {
+  color: #DE5E60;
+}
+#thumbs {
+  margin: 0;
+  padding: 0; 
+}
+#thumbs li {
+  list-style-type: none;
+}
+.item-thumbs {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 32px;
+  cursor: pointer;
+}
+.item-thumbs a + img {
+  width: 100%;  
+}
+.item-thumbs .hover-wrap {
+  position: absolute;
+  display: block;
+  width: 87%;
+  height: 100%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 250ms ease-out 0s;  
+  -moz-transition: opacity 250ms ease-out 0s;
+  -o-transition: opacity 250ms ease-out 0s;
+  transition: opacity 250ms ease-out 0s;
+}
+.item-thumbs:hover .hover-wrap,
+.item-thumbs.active .hover-wrap {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.item-thumbs .hover-wrap .overlay-img {
+  position: absolute;
+  width: 96%;
+  height: 100%;
+  background: #00c0f3;
+  opacity: 0.45;
+  filter: alpha(opacity=45);
+}
+.item-thumbs .hover-wrap .overlay-img-thumb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -16px 0 0 -16px;
+  color: #FFFFFF;
+  font-size: 32px;
+  line-height: 1em;
+  
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
 /* About
 / -------------------------------------------------- */
 .about h1,
